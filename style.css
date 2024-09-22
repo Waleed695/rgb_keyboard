@@ -1,0 +1,38 @@
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    width: 100%; 
+    color: #fff; 
+    background-image: linear-gradient(180deg, #581845, #900C3F, #C70039, #FF5733, #FFC300); /* Apply a linear gradient background from top to bottom */
+}
+
+.mid { 
+    position: relative; 
+    left: 15px; 
+}
+
+.btn {
+    position: relative; 
+    left: 36px; 
+}
+
+input[type="button"] {
+    width: 40px; /* Set the width of the button */
+    height: 40px; 
+    font-size: 20px; 
+    animation: key 2s infinite; /* Apply the 'key' animation with a duration of 2 seconds, repeating infinitely */
+}
+
+@keyframes key {
+    0% { box-shadow: 0px 0px 7px red; } 
+    25% { box-shadow: 0px 0px 7px green; }
+    50% { box-shadow: 0px 0px 7px blue; } 
+    75% { box-shadow: 0px 0px 7px yellow; } 
+    100% { box-shadow: 0px 0px 7px orange; } 
+}
+
+input[type="button"]:hover {
+    transform: scale(1.1); /* Scale the button to 110% of its original size when hovered */
+}

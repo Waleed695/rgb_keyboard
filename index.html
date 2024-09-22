@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form name="keyboard"><!-- Starts a form element with the name "keyboard" -->
+        <input type="text" name="screen" size="50"
+            style="height: 30px; font-size: 15px; background: black; color: white; margin-bottom: 5px;">
+        <br>
+
+<!-- Creates buttons for each letter, adding the corresponding letter to the text input when clicked -->
+        <input type="button" value="q" onclick="keyboard.screen.value+='q'">
+        <input type="button" value="w" onclick="keyboard.screen.value+='w'">
+        <input type="button" value="e" onclick="keyboard.screen.value+='e'">
+        <input type="button" value="r" onclick="keyboard.screen.value+='r'">
+        <input type="button" value="t" onclick="keyboard.screen.value+='t'">
+        <input type="button" value="y" onclick="keyboard.screen.value+='y'">
+        <input type="button" value="u" onclick="keyboard.screen.value+='u'">
+        <input type="button" value="i" onclick="keyboard.screen.value+='i'">
+        <input type="button" value="o" onclick="keyboard.screen.value+='o'"> 
+        <input type="button" value="p" onclick="keyboard.screen.value+='p'">
+
+        <br>  <!-- Inserts a line break after the first row of buttons -->
+
+      <!-- Creates buttons for the second row of letters, with the class "mid" to apply specific styling -->
+        <input type="button" value="a" class="mid" onclick="keyboard.screen.value+='a'">
+        <input type="button" value="s" class="mid" onclick="keyboard.screen.value+='s'">
+        <input type="button" value="d" class="mid" onclick="keyboard.screen.value+='d'">
+        <input type="button" value="f" class="mid" onclick="keyboard.screen.value+='f'">
+        <input type="button" value="g" class="mid" onclick="keyboard.screen.value+='g'">
+        <input type="button" value="h" class="mid" onclick="keyboard.screen.value+='h'">
+        <input type="button" value="j" class="mid" onclick="keyboard.screen.value+='j'">
+        <input type="button" value="k" class="mid" onclick="keyboard.screen.value+='k'">
+        <input type="button" value="l" class="mid" onclick="keyboard.screen.value+='l'">
+
+        <br><!-- Inserts a line break after the second row of buttons -->
+
+        <!-- Creates buttons for the third row of letters, with the class "btn" to apply specific styling -->
+        <input type="button" value="z" class="btn" onclick="keyboard.screen.value+='z'">
+        <input type="button" value="x" class="btn" onclick="keyboard.screen.value+='x'">
+        <input type="button" value="c" class="btn" onclick="keyboard.screen.value+='c'">
+        <input type="button" value="v" class="btn" onclick="keyboard.screen.value+='v'">
+        <input type="button" value="b" class="btn" onclick="keyboard.screen.value+='b'">
+        <input type="button" value="n" class="btn" onclick="keyboard.screen.value+='n'">
+        <input type="button" value="m" class="btn" onclick="keyboard.screen.value+='m'">
+      <!-- Button to delete the last character in the text input by slicing off the last character -->
+        <input type="button" value="x" class="btn" onclick="keyboard.screen.value=keyboard.screen.value.slice(0,-1)" style="color: red;">
+
+    </form><!-- Closes the form element -->
+
+</body>
+
+</html>
